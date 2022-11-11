@@ -1,12 +1,28 @@
+# def divide(x, y, n):
+#     check = array[x][y]
+#     for i in range(x, x + n):
+#         for j in range(y, y + n):
+#             if check != array[i][j]:
+#                 check = -1
+#                 break
+
+#     if check == -1:
+#         print("Q", end='')
+#         n = n // 2
+#         divide(x, y, n)  
+#         divide(x, y + n, n)  
+#         divide(x + n, y, n)  
+#         divide(x + n, y + n, n)  
+
+#     elif check == 1:
+#         print('B',end='')
+#     else:
+#         print('W',end='')
+        
 # N = int(input())
-# for i in range(N):
-#     for j in range(N):
-#         arr = int(input().split())
-
-# def divide(x,y,size,idx):
-#     global n
-#     s = 
-
+# array = [list(map(int, input().split())) for _ in range(N)]
+# print(N)
+# divide(0, 0, N)
 n = int(input())
 graph = [list(map(int, input().split())) for _ in range(n)]
 

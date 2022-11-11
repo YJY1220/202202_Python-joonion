@@ -1,10 +1,15 @@
-def fibonacci(num):
-    if num == 0:
-        return 0
-    elif num == 1:
+res = 0
+def fibo(n):
+    if (n==1):
         return 1
+    if (n==2):
+        return 2
+    if (n==3):
+        return 3
     else:
-        return fibonacci(num-1) + fibonacci(num-2)
+        for i in range(4,n):
+            res = fibo(i-3) + 2*fibo(i-2) - fibo(i-1)
+        return res 
 
 N = int(input())
-print(fibonacci(N))
+print(fibo(N))    

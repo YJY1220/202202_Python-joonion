@@ -20,8 +20,6 @@ N = int(input())
 A=list()
 for i in range(N):
     A.append(list(map(int,input().split())))
-
-
 M,P = map(int,input().split())
 res = multiply(A,P,M)
 for i in range(N):
