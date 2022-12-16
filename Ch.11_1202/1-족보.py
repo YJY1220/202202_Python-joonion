@@ -21,6 +21,3 @@ def solve(v,cnt):
     
 solve(P,0)
 print(family[0] - 1)
-
-#print(family[0] - 1)
-             

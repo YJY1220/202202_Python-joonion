@@ -16,6 +16,6 @@ def solve(n):
         else:
             cnt[i] = 1 + cnt[i-1]
     return cnt[n]
-
+    
 print(solve(N))
         

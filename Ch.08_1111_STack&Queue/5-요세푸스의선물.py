@@ -14,7 +14,8 @@ def josephus(n):
     j = 0
     t = 1
     while len(circle) != 1 :
-        j = (j + t**3 - 1) % len(circle) #탈락자 1
+        #j = (j + t**3 - 1) % len(circle) #탈락자 1
+        j = len(circle) % 17
         sequence.append(circle.pop(j))
         t += 1
     return circle[0]
