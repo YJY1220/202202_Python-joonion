@@ -1,3 +1,4 @@
+#참조 함수
 def primeNum(N):
   a = [False,False] + [True]*(N-1)
   prime_number= []
@@ -7,7 +8,6 @@ def primeNum(N):
       for j in range(2*i, N+1, i):
           a[j] = False
   return prime_number
-
 
 def Change(num): 
   res = 0

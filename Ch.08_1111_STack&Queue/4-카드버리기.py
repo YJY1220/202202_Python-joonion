@@ -8,6 +8,5 @@ def solve(num):
             
     return card[0]
     
-
 N = int(input())
 print(solve(N))

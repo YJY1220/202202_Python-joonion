@@ -8,7 +8,7 @@ for i in range(N):
         fruit[name] = 1
 
 store = []
-store = sorted(fruit.items(),key = lambda x : ( x[0], -x[1]))
+store = sorted(fruit.items(),key = lambda x : (-x[1], x[0]))
 
-for i in range(len(store)):
-    print(" ".join(map(str,store[i])))
+print(store[0][0])
+print(store[0][1])
